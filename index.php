@@ -28,7 +28,6 @@ _tracker.push(['set', 'ConfirmationUrl', 'https://www.infinety.co.uk/thanks.html
 _tracker.push(['send']);
 </script>
 <script src="https://api.moberce.co/js/tracker.js"></script>
-<script src="https://api.moberce.co/js/bioep.min.js"></script>
 
 </body>
 </html>
