@@ -5,7 +5,7 @@ $from = $_POST['from'];
 $message = $_POST['message'];
 
 
-echo "Message sent to" . $to;
+echo "Message sent to " . $to;
 
 
 echo "<script type=\"text/javascript\">
