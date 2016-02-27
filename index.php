@@ -16,7 +16,36 @@
 
 <div class="container">
     <h5>API Test</h5>
-	<p>nothing here other than posting to a server</p>
+	<p>nothing here other than a test form.</p>
+    <div class="col-md-6">
+        <form method="post" action="send.php" class="form-horizontal">
+
+            <div class="form-group">
+                <div class="col-lg-7">
+                    <input type="text" name="to" placeholder="To: example, 07000000000" class="form-control" value="{{ App::environment() == 'local' ? '447500045825' : '' }}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-7">
+                    <input type="text" name="from" placeholder="From: Either your name/company or number" class="form-control" value="{{ App::environment() == 'local' ? 'Test Co' : '' }}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-7">
+                    <textarea name="message" placeholder="Message" class="form-control" rows="10"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-3">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
 </div>
 
 <script type="text/javascript">
