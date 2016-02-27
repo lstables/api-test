@@ -22,13 +22,13 @@
 
             <div class="form-group">
                 <div class="col-lg-7">
-                    <input type="text" name="to" placeholder="To: example, 07000000000" class="form-control" value="{{ App::environment() == 'local' ? '447500045825' : '' }}">
+                    <input type="text" name="to" placeholder="To: example, 07000000000" class="form-control" value="">
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-lg-7">
-                    <input type="text" name="from" placeholder="From: Either your name/company or number" class="form-control" value="{{ App::environment() == 'local' ? 'Test Co' : '' }}">
+                    <input type="text" name="from" placeholder="From: Either your name/company or number" class="form-control" value="Test Co">
                 </div>
             </div>
 
